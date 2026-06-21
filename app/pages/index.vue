@@ -1,6 +1,6 @@
 <template>
   <v-container class="fill-height px-2" width="100%">
-    <sharedNavigation :items="items" title="CJPR" />
+    <sharedNavigation :items="items" title="infosoft" />
     <v-row justify="center">
       <v-col cols="12" sm="11">
         <about />

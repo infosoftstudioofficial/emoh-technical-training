@@ -1,27 +1,29 @@
 <template>
   <v-card id="introduction" variant="flat" class="px-2">
     <v-row class="negative-top" align="center">
-      <v-col cols="12" sm="12" class="text-center mb-0 pb-0">
+      <v-col cols="12" sm="3" class="text-center">
+      </v-col>
+      <v-col cols="12" sm="2" class="text-center">
+        <v-avatar :size="smAndUp ? '180' : '100'">
+          <v-img :src="myAvatar" alt="Iamcj. Avatar"></v-img>
+        </v-avatar>
+      </v-col>
+      <v-col cols="12" sm="4" class="text-center mb-0 pb-0">
         <span class="font-style" :class="smAndUp ? 'text-h4' : 'text-caption'">
           Infosoft
+        </span><br />
+        <span class="font-style font-weight-bold" :class="smAndUp ? 'text-h5' : 'text-caption'">
+          EMOH Technical Training
         </span>
       </v-col>
-      <v-col cols="12" sm="12" class="text-center mt-0 pt-0">
-        <span class="font-style font-weight-bold" :class="smAndUp ? 'text-h5' : 'text-caption'">
-          EMOH Technical Training Session
-        </span>
+      <v-col cols="12" sm="3" class="text-center">
+      </v-col>
+      <v-col cols="12" sm="8" class="text-center mt-0 pt-0">
       </v-col>
       <v-col cols="12">
         <v-card flat class="mb-5">
           <v-card-title class="font-style text-h5 text-start">Introduction</v-card-title>
         </v-card>
-      </v-col>
-      <v-col cols="12" sm="4" class="text-center">
-        <v-avatar :size="smAndUp ? '180' : '100'">
-          <v-img :src="myAvatar" alt="Iamcj. Avatar"></v-img>
-        </v-avatar>
-      </v-col>
-      <v-col cols="12" sm="8">
         <p class="text-subheading font-style pb-5 text-justify">
           Infosoft's goal is to provide high-quality software solutions to our clients with the help of the modern web
           application, selecting the combination of Laravel on the backend and Vue.js paired with Vuetify on the

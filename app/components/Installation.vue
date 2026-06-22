@@ -342,6 +342,11 @@ const backendCommands = ref([
     isCopied: false
   },
   {
+    title: 'Then do navigate to laradock folder and run composer install to install the project\'s dependencies.',
+    snippet: `cd laradock && composer install`,
+    isCopied: false
+  },
+  {
     title: 'Then if any update is made to the laradock configuration, you can run the following command to apply the changes. And That\'s it! You should now have the project running locally.',
     snippet: 'docker compose down && docker compose up -d nginx pgadmin postgres',
     isCopied: false

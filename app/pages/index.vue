@@ -9,6 +9,12 @@
         <installation />
       </v-col>
       <v-col cols="12" sm="11">
+        <structure />
+      </v-col>
+      <v-col cols="12" sm="11">
+        <example />
+      </v-col>
+      <v-col cols="12" sm="11">
         <contact />
       </v-col>
     </v-row>
@@ -30,6 +36,20 @@ const items = [
     icon: 'mdi-tools',
     title: 'Installation',
     model: 'Installation'
+  },
+  {
+    el: '#structure',
+    offset: -70,
+    icon: 'mdi-file-tree',
+    title: 'Structure',
+    model: 'Structure'
+  },
+  {
+    el: '#example',
+    offset: -70,
+    icon: 'mdi-run',
+    title: 'example',
+    model: 'example'
   },
   {
     el: '#contact',

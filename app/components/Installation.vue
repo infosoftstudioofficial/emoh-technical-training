@@ -3,7 +3,7 @@
     <v-row wrap>
       <v-col cols="12">
         <v-card flat class="mb-5">
-          <v-card-title class="font-style text-h5 text-start">Instalaltion</v-card-title>
+          <v-card-title class="font-style text-h5 text-start">Installation</v-card-title>
         </v-card>
       </v-col>
       <v-col cols="12">
@@ -28,6 +28,8 @@
                     manage your node versions<br />
                     Learn <a href="https://vuejs.org/guide/essentials/lifecycle.html" target="_blank"
                       rel="noopener noreferrer">Vue.js</a><br />
+                    Learn <a href="https://vuetifyjs.com/en/" target="_blank"
+                      rel="noopener noreferrer">Vuetify</a><br />
                   </p>
                 </v-col>
                 <v-col cols="12" md="6">
@@ -233,7 +235,7 @@ const copyToClipboard = async (index) => {
 const backendCommands = ref([
   {
     title: 'Go to your projects root folder:',
-    snippet: 'ex. cd /path/to/my-projects-folder',
+    snippet: 'mkdir project && cd project',
     isCopied: false
   },
   {
@@ -277,28 +279,71 @@ const backendCommands = ref([
     isCopied: false
   },
   {
-    title: 'Clone the repository',
+    title: 'Create a project folder for your Laravel project and clone the repository into it.',
+    snippet: 'mkdir project && cd project',
+    isCopied: false
+  },
+  {
+    title: 'Create a code folder inside your project folder and navigate into it.',
+    snippet: 'mkdir code && cd code',
+    isCopied: false
+  },
+  {
+    title: 'Clone the repository into a code folder',
     snippet: 'git clone https://iam_charmainejoy@bitbucket.org/iam_charmainejoy/barmm-hris-api-v1.git',
     isCopied: false
   },
   {
-    title: 'Compiles and hot-reloads for development',
-    snippet: 'npm run serve',
+    title: 'Navigate to laradock/.env',
+    snippet: 'cd laradock && nano .env',
     isCopied: false
   },
   {
-    title: 'Compiles and minifies for production',
-    snippet: 'npm run build',
+    title: 'Then change the `APP_CODE_PATH_HOST=../` into the path/to/my-projects-folder/code` to point to your Laravel project\'s code folder.',
+    snippet: 'APP_CODE_PATH_HOST=../code/',
     isCopied: false
   },
   {
-    title: 'Run your tests',
-    snippet: 'npm run test',
+    title: 'Navigate to laradock/nginx/sites',
+    snippet: 'cd laradock/nginx/sites',
     isCopied: false
   },
   {
-    title: 'Lints and fixes files',
-    snippet: 'npm run lint',
+    title: 'Then open the default.conf file',
+    snippet: 'nano default.conf',
+  },
+  {
+    title: 'Then update the default.conf files root directory to point to your Laravel project\'s public folder.',
+    snippet: 'root /var/www/barmm-hris-api-v1/public;',
+    isCopied: false
+  },
+  {
+    title: 'You can also update the port number if you want to use a different port for your Laravel project.',
+    snippet: 'listen 50500 default_server',
+    isCopied: false
+  },
+  {
+    title: 'Open docker-compose.yml and find nginx server config and add ports mapping for your Laravel project.',
+    snippet: `'ports:\n
+      - "${'NGINX_HOST_HTTP_PORT'}:80"\n
+      - "${'NGINX_HOST_HTTPS_PORT'}:443"\n
+      - "${'VARNISH_BACKEND_PORT'}:81"\n
+      - "50500:50500"'`,
+    isCopied: false
+  },
+  {
+    title: 'Then nagivate to the laradock folder and up the Nginx, PgAdmin and Postgres',
+    snippet: 'docker compose up -d nginx pgadmin postgres',
+    isCopied: false
+  },
+  {
+    title: 'Then update your projects .env file to point to your database credentials.',
+    snippet: '------refer to the backend dev assigned ----',
+    isCopied: false
+  },
+  {
+    title: 'Then if any update is made to the laradock configuration, you can run the following command to apply the changes. And That\'s it! You should now have the project running locally.',
+    snippet: 'docker compose down && docker compose up -d nginx pgadmin postgres',
     isCopied: false
   }
 ])

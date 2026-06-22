@@ -7,12 +7,12 @@ export default {
     "module": true,
     "resourceType": "script"
   },
-  "/Users/cjrosatace/Documents/projects/emoh-technical-training/node_modules/nuxt/dist/app/entry.js": {
+  "/Users/cjrosatace/Documents/projects/new_projects/emoh-technical-training/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/Users/cjrosatace/Documents/projects/emoh-technical-training/node_modules/nuxt/dist/app/entry.js"
+    "file": "/Users/cjrosatace/Documents/projects/new_projects/emoh-technical-training/node_modules/nuxt/dist/app/entry.js"
   }
 }

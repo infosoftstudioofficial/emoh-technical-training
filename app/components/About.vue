@@ -100,11 +100,85 @@
           for delivering high-quality software solutions that meet and exceed client expectations.
         </p>
       </v-col>
+      <v-col cols="12" md="4">
+        <v-card class="mx-auto">
+          <v-img class="align-end text-white" height="200" :src="johnleider" cover>
+            <v-card-title>Creator of Vuetify</v-card-title>
+          </v-img>
+
+          <v-card-subtitle class="pt-4">
+            John Leider
+          </v-card-subtitle>
+
+          <v-card-text>
+            John Leider is the creator of Vuetify, a popular Material Design component framework for Vue.js. He has been
+            instrumental in shaping the Vue.js ecosystem and has contributed significantly to the development of modern
+            web applications.
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn color="orange" text="Share"></v-btn>
+
+            <v-btn color="orange" text="Explore"></v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+      <v-col cols="12" md="4">
+        <v-card class="mx-auto">
+          <v-img class="align-end text-white" height="200" :src="evanyou" cover>
+            <v-card-title>Creator of Vue</v-card-title>
+          </v-img>
+
+          <v-card-subtitle class="pt-4">
+            Evan You
+          </v-card-subtitle>
+
+          <v-card-text>
+            Evan You is the creator of Vue.js, a progressive JavaScript framework for building user interfaces. He has
+            been
+            instrumental in shaping the JavaScript ecosystem and has contributed significantly to the development of
+            modern
+            web applications.
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn color="orange" text="Share"></v-btn>
+
+            <v-btn color="orange" text="Explore"></v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+      <v-col cols="12" md="4">
+        <v-card class="mx-auto">
+          <v-img class="align-end text-white" height="200" :src="taylorotwell" cover>
+            <v-card-title>Creator of Laravel</v-card-title>
+          </v-img>
+
+          <v-card-subtitle class="pt-4">
+            Taylor Otwell
+          </v-card-subtitle>
+
+          <v-card-text>
+            Taylor Otwell is the creator of Laravel, a popular PHP web application framework. He has been
+            instrumental in shaping the PHP ecosystem and has contributed significantly to the development of modern
+            web applications.
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn color="orange" text="Share"></v-btn>
+
+            <v-btn color="orange" text="Explore"></v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
     </v-row>
   </v-card>
 </template>
 <script setup>
 import myAvatar from '@/assets/images/me.png'
+import evanyou from '@/assets/images/evan-you-social.jpg'
+import taylorotwell from '@/assets/images/taylor_otwell.jpeg'
+import johnleider from '@/assets/images/vuetify_john_leider.jpg'
 const { smAndUp } = useDisplay()
 </script>
 <style scoped>

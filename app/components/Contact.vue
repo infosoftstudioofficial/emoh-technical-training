@@ -13,8 +13,9 @@
         <v-col cols="8" class="mr-2">
           <div class="text-subtitle-2 font-weight-bold global-text-style">Cj Rosatace</div>
           <div class="text-caption">+63 995 1872 924</div>
-          <div class="text-caption">iamcjrosatace@gmail.com</div>
+          <div class="text-caption">infosoftstudioofficial@gmail.com</div>
         </v-col>
+
       </v-row>
     </v-card>
   </v-container>

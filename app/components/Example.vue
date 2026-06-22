@@ -8,7 +8,7 @@
             </v-col>
             <v-col cols="12">
                 <v-card flat class="mb-4 pa-4 border">
-                    <strong>Step 1:</strong> Create a new component named <code>FQA.vue</code> inside the
+                    <strong>Step 1:</strong> Create a new component named <code>FAQ.vue</code> inside the
                     <code>components</code> directory.
                 </v-card>
             </v-col>

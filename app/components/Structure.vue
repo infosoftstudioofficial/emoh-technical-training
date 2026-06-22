@@ -1,6 +1,11 @@
 <template>
     <v-card id="structure" flat class="ma-4 pa-4">
         <v-row>
+            <v-col cols="12">
+                <v-card flat class="mb-5">
+                    <v-card-title class="font-style text-h5 text-start">Structure</v-card-title>
+                </v-card>
+            </v-col>
             <v-col cols="12" md="5">
                 <v-card>
                     <v-sheet class="pa-3 bg-surface-variant rounded-t-lg font-weight-bold d-flex align-center">
@@ -31,10 +36,18 @@
                         barmm-hris-api-v1
                     </v-sheet>
 
-                    <v-treeview :items="apiProjectStructure" item-title="name" item-value="name" open-all
-                        density="compact">
+                    <v-treeview :items="apiProjectStructure" item-title="name" item-value="name" density="compact">
                         <template v-slot:prepend="{ item }">
-                            <v-icon :icon="item.icon" :color="item.iconColor"></v-icon>
+                            <v-icon :icon="item.icon" :color="item.iconColor" class="mr-1"></v-icon>
+                        </template>
+
+                        <template v-slot:title="{ item }">
+                            <span class="tree-item-text">
+                                {{ item.name }}
+                                <v-tooltip activator="parent" location="end" class="custom-tooltip">
+                                    {{ item.description }}
+                                </v-tooltip>
+                            </span>
                         </template>
                     </v-treeview>
                 </v-card>

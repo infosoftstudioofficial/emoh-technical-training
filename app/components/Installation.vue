@@ -190,7 +190,7 @@ const commands = ref([
   },
   {
     title: 'Add the following to your .env file',
-    snippet: '# VUE_APP_URL="https://mohhrisstaging.poolreno.com/api-staging/"\n # VUE_APP_PDF_URL="https://mohhrisstaging.poolreno.com/"',
+    snippet: 'VUE_APP_URL="https://mohhrisstaging.poolreno.com/api-staging/"\n VUE_APP_PDF_URL="https://mohhrisstaging.poolreno.com/"',
     isCopied: false
   },
   {

@@ -180,11 +180,6 @@ const commands = ref([
   },
   {
     title: 'Create .env file',
-    snippet: 'mkdir .env',
-    isCopied: false
-  },
-  {
-    title: 'configure .env file',
     snippet: 'nano .env',
     isCopied: false
   },
